@@ -156,7 +156,7 @@ def filterRaw(path, start, end, experiment):
     data = [ matchtimeindex(i, start, end) for i in data]
     featcount(data)
 
-    # --- Offset by total delayed response time 13 seconds --- #
+    # --- Offset by total delayed response time 18 seconds // 16s from inlet to irga, 3.2 within irga --- #
     # make data copy called ldata
     ldata = [i.copy() for i in data]
     # df.gdp = df.gdp.shift(-1)
